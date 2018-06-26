@@ -16,4 +16,9 @@ public class CarTest {
     public void hasCondition() {
         assertEquals("Good", car.getCondition().getConditionName());
     }
+
+    @Test
+    public void canDrive(){
+        assertEquals("You are driving to Dunoon", car.driving("Dunoon"));
+    }
 }

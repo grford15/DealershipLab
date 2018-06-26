@@ -31,4 +31,8 @@ public abstract class Vehicle {
     public void setCondition(Condition condition) {
         this.condition = condition;
     }
+
+    public String driving(String location) {
+        return "You are driving to " + location;
+    }
 }

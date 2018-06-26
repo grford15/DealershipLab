@@ -19,4 +19,15 @@ public class DealershipTest {
         dealership.repairVehicle(car);
         assertEquals(Condition.GOOD, car.getCondition());
     }
+
+    @Test
+    public void hasNoVehicles() {
+        assertEquals(0, dealership.getVehicleCount());
+    }
+
+    @Test
+    public void canAddVehicle() {
+        dealership.addVehicle(car);
+        assertEquals(1, dealership.getVehicleCount());
+    }
 }
